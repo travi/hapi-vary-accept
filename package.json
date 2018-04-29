@@ -1,0 +1,43 @@
+{
+  "name": "hapi-vary-auth",
+  "description": "hapi pre-response handler to include Accept in the Vary header",
+  "version": "0.0.0-semantically-released",
+  "license": "MIT",
+  "repository": "travi/hapi-vary-auth",
+  "bugs": "https://github.com/travi/hapi-vary-auth/issues",
+  "homepage": "https://npm.im/hapi-vary-auth",
+  "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
+  "scripts": {
+    "lint:js": "eslint . --cache",
+    "lint:travis": "travis lint --no-interactive",
+    "test": "run-s lint:* test:*",
+    "test:unit:base": "mocha --recursive test/unit",
+    "test:unit": "nyc run-s test:unit:base",
+    "coverage:report": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "greenkeeper:update-lockfile": "greenkeeper-lockfile-update",
+    "greenkeeper:upload-lockfile": "greenkeeper-lockfile-upload"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@travi/eslint-config-travi": "1.6.13",
+    "babel-preset-env": "1.6.1",
+    "babel-register": "6.26.0",
+    "chai": "4.1.2",
+    "codecov": "3.0.1",
+    "commitlint-config-travi": "1.2.29",
+    "cz-conventional-changelog": "2.1.0",
+    "greenkeeper-lockfile": "1.14.0",
+    "husky": "1.0.0-rc.2",
+    "mocha": "5.1.1",
+    "npm-run-all": "4.1.2",
+    "nyc": "11.7.1",
+    "sinon": "4.5.0"
+  }
+}
