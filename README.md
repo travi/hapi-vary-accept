@@ -1,7 +1,5 @@
 # hapi-vary-accept
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/travi/hapi-vary-accept.svg)](https://greenkeeper.io/)
-
 hapi pre-response handler to include `Accept` in the `Vary` header
 
 <!-- status badges -->
@@ -53,6 +51,7 @@ $ npm install hapi-vary-accept --save
 <!-- contribution badges -->
 [![Conventional Commits][commit-convention-badge]][commit-convention-link]
 [![Commitizen friendly][commitizen-badge]][commitizen-link]
+[![Greenkeeper badge](https://badges.greenkeeper.io/travi/hapi-vary-accept.svg)](https://greenkeeper.io/)
 
 ### Verification
 
