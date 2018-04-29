@@ -1,10 +1,22 @@
 # hapi-vary-accept
 
-hapi pre-response handler to include Accept in the Vary header
+hapi pre-response handler to include `Accept` in the `Vary` header
 
 <!-- status badges -->
 [![Build Status][ci-badge]][ci-link]
 [![Codecov](https://img.shields.io/codecov/c/github/travi/hapi-vary-accept.svg)](https://codecov.io/github/travi/hapi-vary-accept)
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+* [Motivation](#motivation)
+* [Usage](#usage)
+  * [Installation](#installation)
+* [Contribution](#contribution)
+  * [Verification](#verification)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Motivation
 
