@@ -1,5 +1,7 @@
 # hapi-vary-accept
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/travi/hapi-vary-accept.svg)](https://greenkeeper.io/)
+
 hapi pre-response handler to include `Accept` in the `Vary` header
 
 <!-- status badges -->
