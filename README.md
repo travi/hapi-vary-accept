@@ -1,4 +1,4 @@
-# hapi-vary-auth
+# hapi-vary-accept
 
 hapi pre-response handler to include Accept in the Vary header
 
@@ -13,12 +13,12 @@ hapi pre-response handler to include Accept in the Vary header
 [![Conventional Commits][commit-convention-badge]][commit-convention-link]
 [![Commitizen friendly][commitizen-badge]][commitizen-link]
 
-[npm-link]: https://www.npmjs.com/package/hapi-vary-auth
-[npm-badge]: https://img.shields.io/npm/v/hapi-vary-auth.svg
+[npm-link]: https://www.npmjs.com/package/hapi-vary-accept
+[npm-badge]: https://img.shields.io/npm/v/hapi-vary-accept.svg
 [license-link]: LICENSE
-[license-badge]: https://img.shields.io/github/license/travi/hapi-vary-auth.svg
-[ci-link]: https://travis-ci.org/travi/hapi-vary-auth
-[ci-badge]: https://img.shields.io/travis/travi/hapi-vary-auth.svg?branch=master
+[license-badge]: https://img.shields.io/github/license/travi/hapi-vary-accept.svg
+[ci-link]: https://travis-ci.org/travi/hapi-vary-accept
+[ci-badge]: https://img.shields.io/travis/travi/hapi-vary-accept.svg?branch=master
 [commit-convention-link]: https://conventionalcommits.org
 [commit-convention-badge]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg
 [commitizen-link]: http://commitizen.github.io/cz-cli/

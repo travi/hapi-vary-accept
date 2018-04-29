@@ -1,11 +1,11 @@
 {
-  "name": "hapi-vary-auth",
+  "name": "hapi-vary-accept",
   "description": "hapi pre-response handler to include Accept in the Vary header",
   "version": "0.0.0-semantically-released",
   "license": "MIT",
-  "repository": "travi/hapi-vary-auth",
-  "bugs": "https://github.com/travi/hapi-vary-auth/issues",
-  "homepage": "https://npm.im/hapi-vary-auth",
+  "repository": "travi/hapi-vary-accept",
+  "bugs": "https://github.com/travi/hapi-vary-accept/issues",
+  "homepage": "https://npm.im/hapi-vary-accept",
   "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
   "scripts": {
     "lint:js": "eslint . --cache",
