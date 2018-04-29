@@ -1,5 +1,5 @@
 export function handler(request, reply) {
-  request.response.vary('Accept');
+  request.response.vary('accept');
 
   reply.continue();
 }

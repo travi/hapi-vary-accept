@@ -24,6 +24,6 @@ suite('pre-response handler plugin', () => {
     handler({response: {vary}}, {continue: continueSpy});
 
     assert.calledOnce(continueSpy);
-    assert.calledWith(vary, 'Accept');
+    assert.calledWith(vary, 'accept');
   });
 });
