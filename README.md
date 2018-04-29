@@ -8,6 +8,7 @@ hapi pre-response handler to include Accept in the Vary header
 
 <!-- status badges -->
 [![Build Status][ci-badge]][ci-link]
+[![Codecov](https://img.shields.io/codecov/c/github/travi/hapi-vary-accept.svg)](https://codecov.io/github/travi/hapi-vary-accept)
 
 <!-- contribution badges -->
 [![Conventional Commits][commit-convention-badge]][commit-convention-link]
