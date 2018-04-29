@@ -2,12 +2,19 @@
 /test/
 /coverage/
 /.nyc_output/
+/.github/
 
+.babelrc
+.commitlintrc.js
 .editorconfig
 .eslintcache
 .eslintignore
 .eslintrc.yml
+.gitattributes
+.huskyrc.json
 .markdownlintrc
 .nvmrc
+.nycrc
 .travis.yml
+coverage.lcov
 rollup.config.js

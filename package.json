@@ -1,6 +1,8 @@
 {
   "name": "hapi-vary-accept",
   "description": "hapi pre-response handler to include Accept in the Vary header",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.es.js",
   "version": "0.0.0-semantically-released",
   "license": "MIT",
   "repository": "travi/hapi-vary-accept",
@@ -8,6 +10,7 @@
   "homepage": "https://npm.im/hapi-vary-accept",
   "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
   "scripts": {
+    "clean": "rimraf lib/",
     "lint:js": "eslint . --cache",
     "lint:travis": "travis lint --no-interactive",
     "test": "run-s lint:* test:*",
@@ -16,7 +19,11 @@
     "coverage:report": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "generate:readme": "doctoc README.md --entryprefix '*'",
     "greenkeeper:update-lockfile": "greenkeeper-lockfile-update",
-    "greenkeeper:upload-lockfile": "greenkeeper-lockfile-upload"
+    "greenkeeper:upload-lockfile": "greenkeeper-lockfile-upload",
+    "build:js": "rollup -c",
+    "build": "run-s clean build:*",
+    "watch": "run-s 'build:js -- --watch'",
+    "prepublishOnly": "run-s build"
   },
   "publishConfig": {
     "access": "public"
@@ -40,6 +47,8 @@
     "mocha": "5.1.1",
     "npm-run-all": "4.1.2",
     "nyc": "11.7.1",
+    "rimraf": "2.6.2",
+    "rollup": "0.58.2",
     "sinon": "4.5.0"
   },
   "peerDependencies": {
