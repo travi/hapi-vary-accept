@@ -5,13 +5,18 @@ branches:
   except:
   - "/^v\\d+\\.\\d+\\.\\d+$/"
 install:
-  - npm install
-  - gem install travis
-before_script: 'npm run greenkeeper:update-lockfile'
-after_script: 'npm run greenkeeper:upload-lockfile'
+- npm install
+- gem install travis
+before_script: npm run greenkeeper:update-lockfile
+after_script: npm run greenkeeper:upload-lockfile
 after_success: npm run coverage:report
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: npx semantic-release
 env:
   global:
-    - FORCE_COLOR=1
-    - NPM_CONFIG_COLOR=always
-    - GK_LOCK_COMMIT_AMEND=true
+  - FORCE_COLOR=1
+  - NPM_CONFIG_COLOR=always
+  - GK_LOCK_COMMIT_AMEND=true
+  - secure: KSTJql/hbPiD5zcesqreRAcwCZCJkxBW20BwqODzzu4qZsa1YnayrcysMzwmP9ufibpCtwrRNfnKGJDkuoutq1k/TwTcrLAFhP/Ai/NHIBJgLA5sBnqGSL5qCde6J8ctXYsFck9dfphMxUajLxQDNvHgzi+tVPQ/soOfQ2PoWvnx1CPa0Kp4sqsvuY/9bhfC9YXzuzi5S/AWFlvUjvjIaKqM921HOP3E8agy81qdJUD35cxxlBb/Sfoc50Gy6eQQTJKTJ0Ll7GGOMcVikQipsNSc/SJP3gF2p8E+CTcrCupz/k58yMmAQLRBFG/3Y860SHlorlFEFnh/GkJsRhQXy4KbniUscZz6WI8XyFUbEMtvankDoEOyxHkP3Q9xTuOQNkuhVRPM8qiDXtSTQqti+KTT6SAbFWIkZYcrxoJ4uPa3cFD6wclohv0CndvFRPsb+/0e6VpPY9+WHSARcHh4j5TGqKGPyJLm8YBnyaf1gHrLfx3LQ3HNfBclzDTLTRDXOy//WwHK+wsQj/zzavrAgGH7UukqVZcx+4G2iq/axww7Eig0fStvXC+bcpLwpOWF7tFlVce7aHGFsrC6T0u5t1Ma58d2XV6rJtVLKmcjpHJWHciQfQfHXzYJlMhZlzADEUjpno0dfKPpXZKpI8YA3u+tuvV1bXbbaSNid7nkKrQ=
