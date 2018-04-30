@@ -1,5 +1,6 @@
 repository:
   description: hapi pre-response handler to include Accept in the Vary header
+  honepage: https://npm.im/hapi-vary-accept
   has_wiki: false
   has_projects: false
   has_downloads: false
