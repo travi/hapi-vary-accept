@@ -17,7 +17,7 @@ suite('pre-response handler plugin', () => {
     assert.calledWith(ext, 'onPreResponse', handler);
   });
 
-  test('that `Accept` is added the `Vary` header', () => {
+  test('that `accept` is added the `Vary` header', () => {
     const vary = sinon.spy();
     const continueSpy = sinon.spy();
 
@@ -25,5 +25,15 @@ suite('pre-response handler plugin', () => {
 
     assert.calledOnce(continueSpy);
     assert.calledWith(vary, 'accept');
+  });
+
+  test('that `accept` is not added to the `Vary` header for an error response', () => {
+    const vary = sinon.spy();
+    const continueSpy = sinon.spy();
+
+    handler({response: {vary, isBoom: true}}, {continue: continueSpy});
+
+    assert.calledOnce(continueSpy);
+    assert.notCalled(vary);
   });
 });

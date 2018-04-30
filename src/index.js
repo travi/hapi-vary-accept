@@ -1,5 +1,5 @@
-export function handler(request, reply) {
-  request.response.vary('accept');
+export function handler({response}, reply) {
+  if (!response.isBoom) response.vary('accept');
 
   reply.continue();
 }
