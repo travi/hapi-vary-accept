@@ -22,11 +22,14 @@ hapi pre-response handler to include `Accept` in the `Vary` header
 
 tl;dr: Google Chrome caches only the last response for any endpoint, regardless
 of `content-type`, which results in rendering json data instead of the rendered
-page based on the html representation.
+page based on the html representation. These values are cached even with the
+`Cache-Control` header set to `no-cache` in order to optimize operations like
+navigating back or duplicating a tab.
 
-While normally unnecessary, including `Accept` in the `Vary` header is the technically
-correct way to clarify that a single endpoint responds with different responses
-based on the `Accept` header of the request.
+While normally unnecessary because of configuring the headers to prevent caching,
+including `Accept` in the `Vary` header does technically further inform a client
+that a single endpoint responds with different responses based on the `Accept`
+header of the request.
 
 * https://bugs.chromium.org/p/chromium/issues/detail?id=94369
 * https://bugs.chromium.org/p/chromium/issues/detail?id=108425
