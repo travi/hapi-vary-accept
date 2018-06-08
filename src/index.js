@@ -1,15 +1,12 @@
-export function handler({response}, reply) {
+export function handler({response}, h) {
   if (!response.isBoom) response.vary('accept');
 
-  reply.continue();
+  return h.continue;
 }
 
-export function register(server, options, next) {
-  server.ext('onPreResponse', handler);
-
-  next();
-}
-
-register.attributes = {
-  pkg: require('../package.json')
+export const plugin = {
+  pkg: require('../package.json'),
+  async register(server) {
+    server.ext('onPreResponse', handler);
+  }
 };
