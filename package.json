@@ -40,7 +40,7 @@
     "babel-register": "6.26.0",
     "chai": "4.1.2",
     "codecov": "^3.0.2",
-    "commitlint-config-travi": "1.2.34",
+    "commitlint-config-travi": "1.2.35",
     "cz-conventional-changelog": "2.1.0",
     "doctoc": "1.4.0",
     "greenkeeper-lockfile": "1.15.1",
