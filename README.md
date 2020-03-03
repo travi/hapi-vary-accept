@@ -67,8 +67,8 @@ $ npm test
 [npm-badge]: https://img.shields.io/npm/v/hapi-vary-accept.svg
 [license-link]: LICENSE
 [license-badge]: https://img.shields.io/github/license/travi/hapi-vary-accept.svg
-[ci-link]: https://travis-ci.org/travi/hapi-vary-accept
-[ci-badge]: https://img.shields.io/travis/travi/hapi-vary-accept.svg?branch=master
+[ci-link]: https://travis-ci.com/travi/hapi-vary-accept
+[ci-badge]: https://img.shields.io/travis/com/travi/hapi-vary-accept.svg?branch=master
 [commit-convention-link]: https://conventionalcommits.org
 [commit-convention-badge]: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg
 [commitizen-link]: http://commitizen.github.io/cz-cli/
