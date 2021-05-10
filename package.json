@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@babel/register": "7.13.16",
-    "@hapi/hapi": "20.1.2",
+    "@hapi/hapi": "20.1.3",
     "@travi/any": "2.0.16",
     "@travi/babel-preset": "3.0.54",
     "@travi/eslint-config": "1.0.67",
