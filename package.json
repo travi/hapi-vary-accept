@@ -36,7 +36,7 @@
     "@hapi/hapi": "20.1.4",
     "@travi/any": "2.0.16",
     "@travi/babel-preset": "3.0.59",
-    "@travi/eslint-config": "1.0.74",
+    "@travi/eslint-config": "1.0.75",
     "@travi/eslint-config-mocha": "1.0.12",
     "chai": "4.3.4",
     "codecov": "3.8.2",
