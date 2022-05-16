@@ -40,7 +40,7 @@
     "@travi/eslint-config-mocha": "1.0.17",
     "chai": "4.3.6",
     "codecov": "3.8.3",
-    "commitlint-config-travi": "1.4.12",
+    "commitlint-config-travi": "1.4.13",
     "cz-conventional-changelog": "3.3.0",
     "doctoc": "2.2.0",
     "husky": "8.0.1",
