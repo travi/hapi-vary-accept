@@ -9,17 +9,13 @@ hapi pre-response handler to include `Accept` in the `Vary` header
 
 <!--status-badges end -->
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
 
 * [Motivation](#motivation)
 * [Usage](#usage)
   * [Installation](#installation)
 * [Contribution](#contribution)
   * [Verification](#verification)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Motivation
 
@@ -29,10 +25,10 @@ page based on the html representation. These values are cached even with the
 `Cache-Control` header set to `no-cache` in order to optimize operations like
 navigating back or duplicating a tab.
 
-While normally unnecessary because of configuring the headers to prevent caching,
-including `Accept` in the `Vary` header does technically further inform a client
-that a single endpoint responds with different responses based on the `Accept`
-header of the request.
+While normally unnecessary because of configuring the headers to prevent
+caching,including `Accept` in the `Vary` header does technically further inform
+a client that a single endpoint responds with different responses based on the
+`Accept` header of the request.
 
 * <https://bugs.chromium.org/p/chromium/issues/detail?id=94369>
 * <https://bugs.chromium.org/p/chromium/issues/detail?id=108425>
