@@ -51,7 +51,7 @@
     "remark-preset-lint-travi": "5.0.2",
     "remark-toc": "8.0.1",
     "rimraf": "5.0.1",
-    "rollup": "3.25.1",
+    "rollup": "3.25.2",
     "sinon": "15.2.0"
   },
   "peerDependencies": {
