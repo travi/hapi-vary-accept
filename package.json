@@ -1,14 +1,14 @@
 {
   "name": "hapi-vary-accept",
   "description": "hapi pre-response handler to include Accept in the Vary header",
-  "main": "lib/index.cjs.js",
-  "module": "lib/index.es.js",
-  "version": "0.0.0-semantically-released",
   "license": "MIT",
+  "version": "0.0.0-semantically-released",
+  "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
   "repository": "travi/hapi-vary-accept",
   "bugs": "https://github.com/travi/hapi-vary-accept/issues",
   "homepage": "https://npm.im/hapi-vary-accept",
-  "author": "Matt Travi <npm@travi.org> (https://matt.travi.org/)",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.es.js",
   "scripts": {
     "clean": "rimraf lib/",
     "lint:js": "eslint . --cache",
