@@ -58,8 +58,8 @@ $ npm install hapi-vary-accept --save
 
 [![Conventional Commits][commit-convention-badge]][commit-convention-link]
 [![Commitizen friendly][commitizen-badge]][commitizen-link]
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Renovate][renovate-badge]][renovate-link]
+[![semantic-release: angular][semantic-release-badge]][semantic-release-link]
 
 <!--contribution-badges end -->
 
@@ -98,3 +98,7 @@ $ npm test
 [coverage-badge]: https://img.shields.io/codecov/c/github/travi/hapi-vary-accept?logo=codecov
 
 [slsa-badge]: https://slsa.dev/images/gh-badge-level2.svg
+
+[semantic-release-link]: https://github.com/semantic-release/semantic-release
+
+[semantic-release-badge]: https://img.shields.io/badge/semantic--release-angular-e10079?logo=semantic-release
