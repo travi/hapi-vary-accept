@@ -4,8 +4,8 @@ hapi pre-response handler to include `Accept` in the `Vary` header
 
 <!--status-badges start -->
 
-[![Codecov](https://img.shields.io/codecov/c/github/travi/hapi-vary-accept.svg)](https://codecov.io/github/travi/hapi-vary-accept)
 [![Node CI Workflow Status][github-actions-ci-badge]][github-actions-ci-link]
+[![Codecov][coverage-badge]][coverage-link]
 ![SLSA Level 2][slsa-badge]
 
 <!--status-badges end -->
@@ -92,5 +92,9 @@ $ npm test
 [github-actions-ci-link]: https://github.com/travi/hapi-vary-accept/actions?query=workflow%3A%22Node.js+CI%22+branch%3Amaster
 
 [github-actions-ci-badge]: https://github.com/travi/hapi-vary-accept/workflows/Node.js%20CI/badge.svg
+
+[coverage-link]: https://codecov.io/github/travi/hapi-vary-accept
+
+[coverage-badge]: https://img.shields.io/codecov/c/github/travi/hapi-vary-accept?logo=codecov
 
 [slsa-badge]: https://slsa.dev/images/gh-badge-level2.svg
