@@ -91,7 +91,7 @@ $ npm test
 
 [github-actions-ci-link]: https://github.com/travi/hapi-vary-accept/actions?query=workflow%3A%22Node.js+CI%22+branch%3Amaster
 
-[github-actions-ci-badge]: https://github.com/travi/hapi-vary-accept/workflows/Node.js%20CI/badge.svg
+[github-actions-ci-badge]: https://img.shields.io/github/actions/workflow/status/travi/hapi-vary-accept/node-ci.yml.svg?branch=master&logo=github
 
 [coverage-link]: https://codecov.io/github/travi/hapi-vary-accept
 
