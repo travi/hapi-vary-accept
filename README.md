@@ -71,7 +71,7 @@ $ npm test
 
 [npm-link]: https://www.npmjs.com/package/hapi-vary-accept
 
-[npm-badge]: https://img.shields.io/npm/v/hapi-vary-accept.svg
+[npm-badge]: https://img.shields.io/npm/v/hapi-vary-accept?logo=npm
 
 [license-link]: LICENSE
 
