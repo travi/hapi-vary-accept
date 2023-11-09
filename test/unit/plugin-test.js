@@ -1,7 +1,8 @@
 import sinon from 'sinon';
 import {assert} from 'chai';
 import any from '@travi/any';
-import {plugin, handler} from '../../src';
+
+import {plugin, handler} from '../../src/index.js';
 
 suite('pre-response handler plugin', () => {
   const continueSymbol = any.simpleObject();
